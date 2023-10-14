@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Lab 4 | COMP1073 Client-Side JavaScript</title>
+	<link href="css/styles.css" rel="stylesheet" />
+</head>
+    <script>
+        // function MySysDate(){
+        //     document.bgColor="red";
+        //     document.getElementById("eve").innerHTML = Date();
+        // }
+
+        // function PageLoad(){
+        //     alert("Page loaded successfully");
+        // }
+
+        // function red(){
+        //     document.bgColor="red";
+        // }
+
+        // function blue(){
+        //     document.bgColor="blue";
+        // }
+
+        // function BigImage(x){
+        //     x.style.width="300px";
+        //     x.style.height="300px";
+        // }
+        // function SmallImage(){
+        //     document.getElementById("myImg").style.width="30px";
+        //     document.getElementById("myImg").style.height="30px";
+        //     // x.style.width="30px";
+        //     // x.style.height="30px";
+        // }
+
+        // function isTrue(){
+            
+        // }
+
+        // function checksize(){
+
+        // }
+        // function handleResize(){
+        //     if(windows.innerwidth < 768){
+
+        //     }
+                
+           
+        // }
+        function UpperCase(){
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+        function LowerCase(){
+            var x = document.getElementById("lname");
+            x.value = x.value.toLowerCase();
+        }
+
+
+    </script>
+
+
+<!-- <body onload="PageLoad()"> -->
+    <!-- <body onResize="SmallImage()"> -->
+        <!-- <body onResize="handleResize()"> -->
+    <body>
+        <form>
+        <label>Enter name in lower case:</label><br />
+        <input type="text" id="fname" onfocus="UpperCase()"><br />
+        <label>Enter name in Upper case:</label><br />
+        <input type="text" id="lname" onfocus="LowerCase()"><br />
+    </form>
+
+    <button id="try">Click here</button>
+    <h1 id="text"></h1>
+
+    <script>
+        document.getElementById("try").addEventListener("click", function(){
+        document.getElementById("text").innerHTML = "Welcome to javascript";
+        });
+    </script>
+
+	<!-- <p id="eve">Click the button to display System</p>
+    <button onclick="MySysDate()">Click_Date</button>
+    <button onMouseOver="MySysDate()">Click_Date</button>
+
+    <p>Refresh the web page and check it...</p>
+    <p>Once web page loaded alert message displayed</p> -->
+<!-- 
+    <button onMouseOver="red()">red</button>
+    <button onMouseOut="blue()">blue</button>
+
+    <img id="myImg" src="sun.jpg" width="300px" height="300px">
+
+    <p>Once resized warning displayed successfully</p>
+ -->
+
+   
+    
+
+
+</body>
+</html>
+
+
